@@ -1,0 +1,12 @@
+<% content_for :title, "Editing lost item" %>
+
+<h1>Editing lost item</h1>
+
+<%= render "form", lost_item: @lost_item %>
+
+<br>
+
+<div>
+  <%= link_to "Show this lost item", @lost_item %> |
+  <%= link_to "Back to lost items", lost_items_path %>
+</div>
