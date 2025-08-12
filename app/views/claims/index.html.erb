@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Claims" %>
+
+<h1>Claims</h1>
+
+<div id="claims">
+  <% @claims.each do |claim| %>
+    <%= render claim %>
+    <p>
+      <%= link_to "Show this claim", claim %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New claim", new_claim_path %>

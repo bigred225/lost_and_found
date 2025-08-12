@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :claims
   devise_for :administrators
   resources :administrators
   devise_for :users

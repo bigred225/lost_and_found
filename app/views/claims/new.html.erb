@@ -1,0 +1,11 @@
+<% content_for :title, "New claim" %>
+
+<h1>New claim</h1>
+
+<%= render "form", claim: @claim %>
+
+<br>
+
+<div>
+  <%= link_to "Back to claims", claims_path %>
+</div>
