@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :administrators
+  resources :administrators
+  devise_for :users
+  resources :users
   resources :lost_items
   resources :found_items
-  resources :items
   devise_for :admins
   devise_for :students
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
