@@ -1,0 +1,12 @@
+<% content_for :title, "Editing found item" %>
+
+<h1>Editing found item</h1>
+
+<%= render "form", found_item: @found_item %>
+
+<br>
+
+<div>
+  <%= link_to "Show this found item", @found_item %> |
+  <%= link_to "Back to found items", found_items_path %>
+</div>

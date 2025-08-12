@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Found items" %>
+
+<h1>Found items</h1>
+
+<div id="found_items">
+  <% @found_items.each do |found_item| %>
+    <%= render found_item %>
+    <p>
+      <%= link_to "Show this found item", found_item %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New found item", new_found_item_path %>
