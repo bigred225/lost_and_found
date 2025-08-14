@@ -1,3 +1,3 @@
 class FoundItem < ApplicationRecord
-  has_one :claims
+  has_one :claim
 end
